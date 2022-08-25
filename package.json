@@ -6,15 +6,32 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src/**/*.{js,jsx,vue,ts,tsx} --fix"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "1.1.4",
+    "element-plus": "2.2.6",
+    "pinia": "^2.0.20",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@types/node": "^18.7.13",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "@vitejs/plugin-vue": "^3.0.3",
-    "typescript": "^4.6.4",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.4.0",
+    "prettier": "^2.7.1",
+    "typescript": "*",
     "vite": "^3.0.7",
+    "vite-plugin-eslint": "^1.8.1",
     "vue-tsc": "^0.39.5"
   }
 }
